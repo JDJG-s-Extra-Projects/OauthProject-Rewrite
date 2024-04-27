@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "GuildInfoBotTool"
+version = "0.1.0"
+description = ""
+license = "MIT"
+authors = ["JDJG <jdjgbot@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.11.0,<4.0"
+discord-py = {extras = ["speed"], version = ">=2.3.2"}
+jishaku = {git = "https://github.com/Gorialis/jishaku.git"}
+asqlite = {git = "https://github.com/Rapptz/asqlite/"}
+python-dotenv = ">=1.0.1"
+fastapi = {extras = ["all"], version = ">=0.110.2"}
+uvicorn = ">=0.29.0"
+psutil = ">=5.9.8"
+asyncpg = ">=0.29.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.masonry.api"
